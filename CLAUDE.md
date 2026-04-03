@@ -3,11 +3,11 @@
 # Last updated: 2026-04-02
 
 ## Project identity
-- Report name   : PEA import
+- Report name   : YOUR_REPORT_NAME
 - File format   : Power BI Desktop (.pbip)
 - MCP server    : powerbi-modeling-mcp (registered as "powerbi-modeling-mcp" in Claude Code)
 - Exe location  : powerbi-mcp-ext/extension/server/powerbi-modeling-mcp.exe
-- GitHub repo   : https://github.com/Seebbou7/powerbi-mcp-claude
+- GitHub repo   : YOUR_GITHUB_REPO
 
 ## How to connect at session start
 1. Run: .\connect_pbi_mcp.ps1  (registers MCP + confirms PBI Desktop is running)
@@ -15,9 +15,9 @@
 3. Say: "Connect to the open Power BI Desktop file through mcp"
 
 ## MCP connection details (discovered 2026-04-02)
-- Local instance port : 63181 (changes each PBI Desktop restart — always use ListLocalInstances)
+- Local instance port : <discovered at runtime via ListLocalInstances — changes each PBI Desktop restart>
 - Connection string   : Data Source=localhost:<port>;Application Name=MCP-PBIModeling
-- Database ID         : c525ae4a-c5cd-41e7-8e93-2d657ae9e12a
+- Database ID         : <discovered at runtime>
 - Compatibility level : 1601
 - Model state         : Unprocessed
 - Estimated size      : ~203 MB
@@ -160,7 +160,7 @@ Uses TI_Table instead of forbidden functions:
 - Use display folders to organize measures (avoid FACT_ prefix in folder names)
 
 ## Git workflow
-- Repo    : https://github.com/Seebbou7/powerbi-mcp-claude
+- Repo    : YOUR_GITHUB_REPO
 - Branch  : feature/[area]-[description]
 - Always save .pbip before committing
 - Commit after each validated batch of measures

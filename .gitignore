@@ -1,0 +1,23 @@
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+
+# Claude Code internals
+.claude/
+
+# Node
+node_modules/
+
+# Generated reports (large binary, regenerate locally)
+*.docx
+
+# Power BI binary assets (large, not needed in repo)
+powerbi-mcp-ext.zip
+powerbi-mcp-ext/extension/out/
+powerbi-mcp-ext/extension/node_modules/
+
+# Secrets / env
+.env
+*.env

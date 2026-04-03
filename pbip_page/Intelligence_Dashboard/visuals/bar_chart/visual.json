@@ -1,0 +1,61 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "bar_chart",
+  "position": { "x": 880, "y": 168, "z": 2, "width": 390, "height": 270, "tabOrder": 31 },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "objects": {
+      "categoryAxis": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "labelColor": { "expr": { "Literal": { "Value": "'#AAAAAA'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "9D" } } },
+          "showAxisTitle": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "valueAxis": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "dataPoint": [{
+        "properties": {
+          "defaultColor": { "expr": { "Literal": { "Value": "'#C5A028'" } } }
+        }
+      }],
+      "dataLabels": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'#CCCCCC'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "9D" } } },
+          "labelDisplayUnits": { "expr": { "Literal": { "Value": "1000D" } } }
+        }
+      }],
+      "legend": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }]
+    },
+    "vcObjects": {
+      "background": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'#2A2A2A'" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "title": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "text": { "expr": { "Literal": { "Value": "'TOP 10 Cateirua'" } } },
+          "fontColor": { "expr": { "Literal": { "Value": "'#FFFFFF'" } } },
+          "background": { "expr": { "Literal": { "Value": "'#2A2A2A'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+          "alignment": { "expr": { "Literal": { "Value": "'left'" } } }
+        }
+      }]
+    }
+  }
+}

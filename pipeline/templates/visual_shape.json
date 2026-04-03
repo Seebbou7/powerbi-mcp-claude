@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "{{VISUAL_ID}}",
+  "position": { "x": "{{X}}", "y": "{{Y}}", "z": "{{Z}}", "width": "{{WIDTH}}", "height": "{{HEIGHT}}", "tabOrder": "{{TAB_ORDER}}" },
+  "visual": {
+    "visualType": "shape",
+    "objects": {
+      "fill": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "fillColor": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "line": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } },
+          "lineColor": { "expr": { "Literal": { "Value": "'{{GRIDLINE_COLOR}}'" } } },
+          "weight": { "expr": { "Literal": { "Value": "1D" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "rotation": [{
+        "properties": {
+          "angle": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }]
+    },
+    "vcObjects": {
+      "background": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "title": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "header_bg",
+  "position": { "x": 0, "y": 0, "z": 0, "width": 1280, "height": 48, "tabOrder": 0 },
+  "visual": {
+    "visualType": "shape",
+    "objects": {
+      "line": [{ "properties": { "weight": { "expr": { "Literal": { "Value": "0D" } } } } }],
+      "fill": [{
+        "properties": {
+          "fillColor": { "expr": { "Literal": { "Value": "'#2A2A2A'" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "rotation": [{ "properties": { "angle": { "expr": { "Literal": { "Value": "0D" } } } } }]
+    },
+    "vcObjects": {
+      "background": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_description": "Heuristic rules to map Figma element names to Power BI visual types. Matched case-insensitively. First match wins.",
+  "rules": [
+    { "pattern": "header.*bg|background.*rect|bg.*shape|divider|separator|line.*rule", "visualType": "shape", "zLayer": 0 },
+    { "pattern": "nav.*bar|tab.*bar|navigation", "visualType": "shape", "zLayer": 0 },
+    { "pattern": "tab[_ ]|nav.*btn|nav.*button|page.*tab", "visualType": "actionButton", "zLayer": 1 },
+    { "pattern": "slicer|filter|dropdown|combo.*box|chip.*select", "visualType": "slicer", "zLayer": 1 },
+    { "pattern": "kpi|card|metric|score.*card|big.*number|stat", "visualType": "card", "zLayer": 2 },
+    { "pattern": "line.*chart|trend|time.*series|evolution|sparkline", "visualType": "lineChart", "zLayer": 2 },
+    { "pattern": "area.*chart|stacked.*area", "visualType": "areaChart", "zLayer": 2 },
+    { "pattern": "bar.*chart|horizontal.*bar|clustered.*bar", "visualType": "clusteredBarChart", "zLayer": 2 },
+    { "pattern": "column.*chart|vertical.*bar|clustered.*col", "visualType": "columnChart", "zLayer": 2 },
+    { "pattern": "stacked.*bar", "visualType": "hundredPercentStackedBarChart", "zLayer": 2 },
+    { "pattern": "stacked.*col", "visualType": "hundredPercentStackedColumnChart", "zLayer": 2 },
+    { "pattern": "waterfall", "visualType": "waterfallChart", "zLayer": 2 },
+    { "pattern": "donut|doughnut", "visualType": "donutChart", "zLayer": 2 },
+    { "pattern": "pie.*chart", "visualType": "pieChart", "zLayer": 2 },
+    { "pattern": "treemap", "visualType": "treemap", "zLayer": 2 },
+    { "pattern": "gauge|speedometer|dial", "visualType": "gauge", "zLayer": 2 },
+    { "pattern": "funnel", "visualType": "funnel", "zLayer": 2 },
+    { "pattern": "scatter|bubble.*chart", "visualType": "scatterChart", "zLayer": 2 },
+    { "pattern": "map|geo|geography|choropleth", "visualType": "map", "zLayer": 2 },
+    { "pattern": "filled.*map|heat.*map", "visualType": "filledMap", "zLayer": 2 },
+    { "pattern": "matrix|pivot|cross.*tab|heatmap.*table", "visualType": "matrix", "zLayer": 2 },
+    { "pattern": "table|grid|detail|data.*list|row.*list", "visualType": "tableEx", "zLayer": 2 },
+    { "pattern": "image|logo|icon.*img|photo|illustration", "visualType": "image", "zLayer": 1 },
+    { "pattern": "text|title|label|heading|branding|subtitle|description", "visualType": "textbox", "zLayer": 1 },
+    { "pattern": "button|action|link|cta", "visualType": "actionButton", "zLayer": 1 }
+  ],
+  "sizeHeuristics": {
+    "_description": "Fallback rules when name-based classification is ambiguous",
+    "card": { "maxWidth": 350, "maxHeight": 180, "minAspectRatio": 1.2 },
+    "slicer": { "maxHeight": 50, "minAspectRatio": 2.0 },
+    "shape": { "conditions": ["no_text_children", "aspect_ratio_gt_10"] }
+  },
+  "ignorePatterns": [
+    "auto.*layout",
+    "frame.*\\d+$",
+    "group.*\\d+$",
+    "component.*\\d+$",
+    "mask",
+    "clip"
+  ]
+}

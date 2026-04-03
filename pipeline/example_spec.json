@@ -1,0 +1,32 @@
+{
+  "pageName": "Promo Performance Overview",
+  "figmaWidth": 1440,
+  "figmaHeight": 900,
+  "theme": {
+    "pageBgColor": "#1E1E1E",
+    "visualBgColor": "#2A2A2A",
+    "accentColor": "#C5A028",
+    "textColor": "#FFFFFF",
+    "axisLabelColor": "#888888",
+    "gridlineColor": "#3A3A3A",
+    "dataLabelColor": "#CCCCCC",
+    "titleColor": "#FFFFFF",
+    "cardBgColor": "#2D2D2D",
+    "fontFamily": "Segoe UI",
+    "valueFontSize": "36",
+    "labelFontSize": "11",
+    "axisFontSize": "9"
+  },
+  "visuals": [
+    { "name": "Header Background", "visualType": "shape", "x": 0, "y": 0, "width": 1440, "height": 56, "zLayer": 0 },
+    { "name": "Year Slicer", "visualType": "slicer", "x": 280, "y": 10, "width": 140, "height": 36, "zLayer": 1 },
+    { "name": "Total Promo Cost", "visualType": "card", "x": 16, "y": 72, "width": 260, "height": 120, "zLayer": 2, "measure": "Fact_Promo_Total_Promo_Cost", "measureTable": "KPIs" },
+    { "name": "Incremental Sales", "visualType": "card", "x": 290, "y": 72, "width": 260, "height": 120, "zLayer": 2, "measure": "Fact_Promo_Incremental_Sales_Value", "measureTable": "KPIs" },
+    { "name": "ROI %", "visualType": "card", "x": 564, "y": 72, "width": 260, "height": 120, "zLayer": 2, "measure": "Fact_Promo_%_ROI", "measureTable": "KPIs" },
+    { "name": "Value Uplift", "visualType": "card", "x": 838, "y": 72, "width": 260, "height": 120, "zLayer": 2, "measure": "Fact_Promo_%_Value_Uplift", "measureTable": "KPIs" },
+    { "name": "Volume Uplift", "visualType": "card", "x": 1112, "y": 72, "width": 260, "height": 120, "zLayer": 2, "measure": "Fact_Promo_%_Volume_Uplift", "measureTable": "KPIs" },
+    { "name": "Sales Trend", "visualType": "lineChart", "x": 16, "y": 208, "width": 900, "height": 320, "zLayer": 2, "measure": "Fact_Promo_Incremental_Sales_Value", "measureTable": "KPIs", "category": "Calendar_date", "categoryTable": "Dim_Calendar", "title": "Incremental Sales Trend" },
+    { "name": "Top Categories", "visualType": "clusteredBarChart", "x": 930, "y": 208, "width": 494, "height": 320, "zLayer": 2, "measure": "Fact_Promo_Total_Promo_Cost", "measureTable": "KPIs", "category": "Metier", "categoryTable": "Dim_Product_Hierarchy", "title": "Top 10 Categories" },
+    { "name": "Detail Table", "visualType": "tableEx", "x": 16, "y": 544, "width": 1408, "height": 340, "zLayer": 2 }
+  ]
+}

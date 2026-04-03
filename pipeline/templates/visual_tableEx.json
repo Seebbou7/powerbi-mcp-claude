@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "{{VISUAL_ID}}",
+  "position": { "x": "{{X}}", "y": "{{Y}}", "z": "{{Z}}", "width": "{{WIDTH}}", "height": "{{HEIGHT}}", "tabOrder": "{{TAB_ORDER}}" },
+  "visual": {
+    "visualType": "tableEx",
+    "objects": {
+      "header": [{
+        "properties": {
+          "fontColor": { "expr": { "Literal": { "Value": "'{{TEXT_COLOR}}'" } } },
+          "backColor": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "{{LABEL_FONT_SIZE}}D" } } },
+          "fontFamily": { "expr": { "Literal": { "Value": "'{{FONT_FAMILY}}'" } } },
+          "bold": { "expr": { "Literal": { "Value": "false" } } },
+          "alignment": { "expr": { "Literal": { "Value": "'Center'" } } },
+          "outline": { "expr": { "Literal": { "Value": "'BottomOnly'" } } }
+        }
+      }],
+      "values": [{
+        "properties": {
+          "fontColorPrimary": { "expr": { "Literal": { "Value": "'{{TEXT_COLOR}}'" } } },
+          "backColorPrimary": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "fontColorSecondary": { "expr": { "Literal": { "Value": "'{{TEXT_COLOR}}'" } } },
+          "backColorSecondary": { "expr": { "Literal": { "Value": "'{{CARD_BG_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "{{LABEL_FONT_SIZE}}D" } } },
+          "fontFamily": { "expr": { "Literal": { "Value": "'{{FONT_FAMILY}}'" } } },
+          "urlIcon": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "total": [{
+        "properties": {
+          "fontColor": { "expr": { "Literal": { "Value": "'{{ACCENT_COLOR}}'" } } },
+          "backColor": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "{{LABEL_FONT_SIZE}}D" } } },
+          "bold": { "expr": { "Literal": { "Value": "true" } } }
+        }
+      }],
+      "grid": [{
+        "properties": {
+          "gridVertical": { "expr": { "Literal": { "Value": "false" } } },
+          "gridHorizontalColor": { "expr": { "Literal": { "Value": "'{{GRIDLINE_COLOR}}'" } } },
+          "gridHorizontalWeight": { "expr": { "Literal": { "Value": "1D" } } },
+          "rowPadding": { "expr": { "Literal": { "Value": "4D" } } },
+          "outlineColor": { "expr": { "Literal": { "Value": "'{{GRIDLINE_COLOR}}'" } } }
+        }
+      }]
+    },
+    "vcObjects": {
+      "background": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "title": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "text": { "expr": { "Literal": { "Value": "'{{TITLE_TEXT}}'" } } },
+          "fontColor": { "expr": { "Literal": { "Value": "'{{TITLE_COLOR}}'" } } },
+          "background": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+          "alignment": { "expr": { "Literal": { "Value": "'left'" } } }
+        }
+      }]
+    },
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [{ "queryRef": "{{MEASURE_TABLE}}.{{MEASURE_NAME}}", "active": true }]
+        }
+      }
+    }
+  }
+}

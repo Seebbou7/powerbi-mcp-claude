@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "{{VISUAL_ID}}",
+  "position": { "x": "{{X}}", "y": "{{Y}}", "z": "{{Z}}", "width": "{{WIDTH}}", "height": "{{HEIGHT}}", "tabOrder": "{{TAB_ORDER}}" },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "objects": {
+      "categoryAxis": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "labelColor": { "expr": { "Literal": { "Value": "'{{AXIS_LABEL_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "{{AXIS_FONT_SIZE}}D" } } },
+          "showAxisTitle": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "valueAxis": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "dataPoint": [{
+        "properties": {
+          "defaultColor": { "expr": { "Literal": { "Value": "'{{ACCENT_COLOR}}'" } } }
+        }
+      }],
+      "dataLabels": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'{{DATA_LABEL_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "9D" } } },
+          "labelDisplayUnits": { "expr": { "Literal": { "Value": "1000D" } } }
+        }
+      }],
+      "legend": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }]
+    },
+    "vcObjects": {
+      "background": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "title": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "text": { "expr": { "Literal": { "Value": "'{{TITLE_TEXT}}'" } } },
+          "fontColor": { "expr": { "Literal": { "Value": "'{{TITLE_COLOR}}'" } } },
+          "background": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "12D" } } },
+          "alignment": { "expr": { "Literal": { "Value": "'left'" } } }
+        }
+      }]
+    },
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [{ "queryRef": "{{CATEGORY_TABLE}}.{{CATEGORY_COLUMN}}", "active": true }]
+        },
+        "Y": {
+          "projections": [{ "queryRef": "{{MEASURE_TABLE}}.{{MEASURE_NAME}}", "active": true }]
+        }
+      }
+    }
+  }
+}

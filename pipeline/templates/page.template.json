@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.0.0/schema.json",
+  "name": "{{PAGE_ID}}",
+  "displayName": "{{PAGE_DISPLAY_NAME}}",
+  "displayOption": "FitToPage",
+  "height": "{{HEIGHT}}",
+  "width": "{{WIDTH}}",
+  "background": {
+    "color": { "value": "{{PAGE_BG_COLOR}}" },
+    "transparency": 0
+  },
+  "wallpaper": {
+    "color": { "value": "{{PAGE_BG_COLOR}}" },
+    "transparency": 0
+  },
+  "ordinal": "{{PAGE_ORDINAL}}",
+  "visualContainers": []
+}

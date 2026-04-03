@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "{{VISUAL_ID}}",
+  "position": { "x": "{{X}}", "y": "{{Y}}", "z": "{{Z}}", "width": "{{WIDTH}}", "height": "{{HEIGHT}}", "tabOrder": "{{TAB_ORDER}}" },
+  "visual": {
+    "visualType": "actionButton",
+    "objects": {
+      "text": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "text": { "expr": { "Literal": { "Value": "'{{TITLE_TEXT}}'" } } },
+          "fontColor": { "expr": { "Literal": { "Value": "'{{TEXT_COLOR}}'" } } },
+          "fontSize": { "expr": { "Literal": { "Value": "{{LABEL_FONT_SIZE}}D" } } },
+          "fontFamily": { "expr": { "Literal": { "Value": "'{{FONT_FAMILY}}'" } } },
+          "alignment": { "expr": { "Literal": { "Value": "'center'" } } }
+        }
+      }],
+      "background": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'{{VISUAL_BG_COLOR}}'" } } },
+          "transparency": { "expr": { "Literal": { "Value": "0D" } } }
+        }
+      }],
+      "border": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "true" } } },
+          "color": { "expr": { "Literal": { "Value": "'{{ACCENT_COLOR}}'" } } },
+          "weight": { "expr": { "Literal": { "Value": "1D" } } },
+          "radius": { "expr": { "Literal": { "Value": "4D" } } }
+        }
+      }]
+    },
+    "vcObjects": {
+      "background": [{
+        "properties": {
+          "show": { "expr": { "Literal": { "Value": "false" } } }
+        }
+      }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "title": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }]
+    }
+  }
+}

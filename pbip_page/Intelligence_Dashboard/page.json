@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.0.0/schema.json",
+  "name": "Intelligence Dashboard",
+  "displayName": "Intelligence Dashboard",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "background": {
+    "color": { "value": "#1E1E1E" },
+    "transparency": 0
+  },
+  "wallpaper": {
+    "color": { "value": "#1E1E1E" },
+    "transparency": 0
+  },
+  "ordinal": 10,
+  "visualContainers": [
+    {
+      "id": "header_bg",
+      "x": 0, "y": 0, "z": 0,
+      "width": 1280, "height": 48,
+      "config": { "singleVisual": { "visualType": "shape" } }
+    },
+    {
+      "id": "tab_psi",
+      "x": 10, "y": 8, "z": 1,
+      "width": 100, "height": 32,
+      "config": { "singleVisual": { "visualType": "actionButton" } }
+    },
+    {
+      "id": "tab_saz",
+      "x": 116, "y": 8, "z": 1,
+      "width": 100, "height": 32,
+      "config": { "singleVisual": { "visualType": "actionButton" } }
+    },
+    {
+      "id": "slicer_year",
+      "x": 280, "y": 8, "z": 1,
+      "width": 120, "height": 32,
+      "config": { "singleVisual": { "visualType": "slicer" } }
+    },
+    {
+      "id": "slicer_supply",
+      "x": 410, "y": 8, "z": 1,
+      "width": 120, "height": 32,
+      "config": { "singleVisual": { "visualType": "slicer" } }
+    },
+    {
+      "id": "slicer_todos",
+      "x": 540, "y": 8, "z": 1,
+      "width": 120, "height": 32,
+      "config": { "singleVisual": { "visualType": "slicer" } }
+    },
+    {
+      "id": "branding",
+      "x": 950, "y": 12, "z": 1,
+      "width": 320, "height": 24,
+      "config": { "singleVisual": { "visualType": "textbox" } }
+    },
+    {
+      "id": "kpi1",
+      "x": 10, "y": 58, "z": 2,
+      "width": 226, "height": 100,
+      "config": { "singleVisual": { "visualType": "card" } }
+    },
+    {
+      "id": "kpi2",
+      "x": 246, "y": 58, "z": 2,
+      "width": 248, "height": 100,
+      "config": { "singleVisual": { "visualType": "card" } }
+    },
+    {
+      "id": "kpi3",
+      "x": 504, "y": 58, "z": 2,
+      "width": 248, "height": 100,
+      "config": { "singleVisual": { "visualType": "card" } }
+    },
+    {
+      "id": "kpi4",
+      "x": 762, "y": 58, "z": 2,
+      "width": 248, "height": 100,
+      "config": { "singleVisual": { "visualType": "card" } }
+    },
+    {
+      "id": "kpi5",
+      "x": 1020, "y": 58, "z": 2,
+      "width": 250, "height": 100,
+      "config": { "singleVisual": { "visualType": "card" } }
+    },
+    {
+      "id": "line_chart",
+      "x": 10, "y": 168, "z": 2,
+      "width": 860, "height": 270,
+      "config": { "singleVisual": { "visualType": "lineChart" } }
+    },
+    {
+      "id": "bar_chart",
+      "x": 880, "y": 168, "z": 2,
+      "width": 390, "height": 270,
+      "config": { "singleVisual": { "visualType": "clusteredBarChart" } }
+    },
+    {
+      "id": "cluster_matrix",
+      "x": 10, "y": 448, "z": 2,
+      "width": 460, "height": 262,
+      "config": { "singleVisual": { "visualType": "matrix" } }
+    },
+    {
+      "id": "detail_table",
+      "x": 480, "y": 448, "z": 2,
+      "width": 790, "height": 262,
+      "config": { "singleVisual": { "visualType": "tableEx" } }
+    }
+  ]
+}

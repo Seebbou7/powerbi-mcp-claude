@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "branding",
+  "position": { "x": 950, "y": 12, "z": 1, "width": 320, "height": 24, "tabOrder": 10 },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [{
+        "properties": {
+          "paragraphs": [{
+            "textRuns": [{
+              "value": "INTELLIGENCE BUSINESS SUPPORT",
+              "textStyle": {
+                "fontFamily": "Segoe UI",
+                "fontSize": "10pt",
+                "bold": false,
+                "italic": false,
+                "color": "#AAAAAA",
+                "letterSpacing": "1px"
+              }
+            }],
+            "horizontalTextAlignment": "Right"
+          }]
+        }
+      }]
+    },
+    "vcObjects": {
+      "background": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }],
+      "border": [{ "properties": { "show": { "expr": { "Literal": { "Value": "false" } } } } }]
+    }
+  }
+}
